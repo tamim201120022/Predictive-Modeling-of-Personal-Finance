@@ -91,3 +91,4 @@ webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.6.3
 Werkzeug==3.0.1
+pywin32 -ge 226 -and pywin32 -lt 227
