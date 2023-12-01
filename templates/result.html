@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Result</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/') }}" rel="icon">
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    #header {
+        background : rgba(6, 12, 34, 0.98);
+    }
+
+    .col-md-12 {
+        flex: 0 0 auto;
+        width: 51%;
+        margin: auto;
+    }
+
+    label {
+        font-size: larger;
+        font-weight: 600;
+    }
+
+    #contact .php-email-form input {
+        font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto active" href="/">Result</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="section-bg" style="margin: 100px auto">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Personal Finance Prediction</h2>
+        </div>
+
+        <div class="form" style="margin: 0">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-12">
+                <label>Total Expense:</label>
+                <input type="text" class="form-control input" value="{{ '%.2f'|format(total_expense|float) }}" disabled>
+              </div>
+              <div class="form-group col-md-12">
+                <label>Transportation:</label>
+                <input type="text" class="form-control input" value="{{ ((total_expense * 8) / 100) | round(2) }}" disabled="true">
+              </div>
+              <div class="form-group col-md-12">
+                <label>Medical:</label>
+                <input type="text" class="form-control input" value="{{ ((total_expense * 6) / 100) | round(2) }}" disable="true">
+              </div>
+              <div class="form-group col-md-12">
+                <label>Food:</label>
+                <input type="text" class="form-control input" value="{{ ((total_expense * 35) / 100) | round(2) }}" disable="true">
+              </div>
+              <div class="form-group col-md-12">
+                <label>Shopping:</label>
+                <input type="text" class="form-control input" value="{{ ((total_expense * 10) / 100) | round(2) }}" disable="true">
+              </div>
+              <div class="form-group col-md-12">
+                <label>Others:</label>
+                <input type="text" class="form-control input" value="{{ ((total_expense * 41) / 100) | round(2) }}" disable="true">
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+</div>
+</section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-info">
+          <p>
+            In Bangladesh's evolving economy, understanding and predicting personal finance behavior is paramount. Diverse demographics and varied socioeconomic backgrounds necessitate tailored strategies. Advanced predictive modeling is the key to empowering individuals for better financial decisions, ultimately contributing to economic stability and growth.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            Tamim Ahmed <br>
+            Gopibag,Motijheel<br>
+            Dhaka-1203 <br>
+            <strong>Phone:</strong> +8801960013601<br>
+            <strong>Email:</strong> tamim201120022@student.ndub.edu.bd<br>
+          </p>
+
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; <strong></strong>.
+    </div>
+    <div class="credits">
+      <!--
+      All the links in the footer should remain intact.
+      You can delete the links only if you purchased the pro version.
+      Licensing information: https://bootstrapmade.com/license/
+      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+    -->
+      Designed by <a href="https://bootstrapmade.com/">Tamim Ahmed</a>
+    </div>
+  </div>
+</footer><!-- End  Footer -->
+s
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JavaScript Files -->
+<script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
