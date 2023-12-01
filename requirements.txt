@@ -91,3 +91,4 @@ webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.6.3
 Werkzeug==3.0.1
+pip==23.3.1
