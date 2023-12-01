@@ -93,3 +93,4 @@ webencodings==0.5.1
 websocket-client==1.6.3
 Werkzeug==3.0.1
 gunicorn==21.2.0
+pywin32
