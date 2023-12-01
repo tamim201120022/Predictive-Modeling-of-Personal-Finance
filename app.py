@@ -171,7 +171,7 @@ def predict():
     return render_template('result.html', total_expense=y_pred[0, 0])
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
 
 with open('linear_regression_model.pkl', 'rb') as file:
     linear_regression_model = pickle.load(file)
